@@ -64,7 +64,7 @@ def run_dynamic_analysis():
             layer_num = block_num * 2
         else:
             layer_num = block_num * 3
-    config = {'dir_path': '/path/to/working/dir', 'data': data_option, 'model': model_option,
+    config = {'dir_path': 'save', 'data': data_option, 'model': model_option,
               'simple_train_batch_size': 128, 'simple_test_batch_size': 100, 'epoch_num': 600,
               'momentum': 0.9, 'weight_decay': 5e-4, "sample_size_per_class": 100,
               'normalization': None, 'eps': None, 'measure': measure_option, 'class_num': 10,

@@ -105,7 +105,7 @@ def load_data_from_pickle(config):
 
 def run_save_data():
     data_option = sys.argv[1].split('=')[1]
-    config = {'dir_path': '/path/to/working/dir', 'data': data_option, "sample_size_per_class": 100,
+    config = {'dir_path': 'save', 'data': data_option, "sample_size_per_class": 100,
               'class_num': 10}
     print('save data')
     set_random_seed(666)

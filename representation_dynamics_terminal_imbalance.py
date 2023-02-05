@@ -55,7 +55,7 @@ def run_dynamic_analysis():
     measure_option = sys.argv[5].split('=')[1]
     optimization = sys.argv[6].split('=')[1]
     lr = float(sys.argv[7].split('=')[1])
-    config = {'dir_path': '/path/to/working/dir', 'data': data_option, 'model': model_option,
+    config = {'dir_path': 'save', 'data': data_option, 'model': model_option,
               'simple_train_batch_size': 128, 'simple_test_batch_size': 100, 'epoch_num': 600,
               'momentum': 0.9, 'weight_decay': 5e-4,
               't1': 5, 'big_class_sample_size': 2500, 'small_class_sample_size': 500, 'R': '5',
